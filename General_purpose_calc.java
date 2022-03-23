@@ -7,8 +7,8 @@ public class General_purpose_calc
         Scanner sc = new Scanner(System.in);
         System.out.println(" What would you like to calculate? ");
         System.out.println(" Press '1' for Pythagoras Theorem calculator ");
-        System.out.println(" Press '2' for Triangle type calculator ");
-        System.out.println(" Press '3' if you would like to know the Pythagoras Theorem ");
+        System.out.println(" Press '2' if you would like to know the Pythagoras Theorem ");
+        System.out.println(" Press '3' for Triangle type calculator ");
         System.out.println(" Press '4' for a simple calculator ");
         ch1 = sc.nextInt();
         if(ch1 == 1)
@@ -49,7 +49,7 @@ public class General_purpose_calc
             default :System.out.println(" Invalid ");
             } 
         }
-        else if(ch1 == 2)
+        else if(ch1 == 3)
         {
             System.out.println(" Enter value of the first side ");
             s1 = sc.nextInt();
@@ -82,7 +82,7 @@ public class General_purpose_calc
                 System.out.println("Unkown triangle type");
             }
         }
-        else if(ch1==3)
+        else if(ch1==2)
         {
             System.out.println(" Here is the Pythagoras Theorem : ");
             System.out.println(" Pythagoras' theorem states that for all right-angled triangles, ");
