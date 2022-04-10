@@ -4,7 +4,7 @@ public class General_purpose_calc
 {
     public static void main(String[] args)
     {
-        int s1 = 0,s2 = 0,s3 = 0,ch1 = 0;
+        int ch1 = 0; //Declaring variables for selection system
         Scanner sc = new Scanner(System.in);
         System.out.println(" What would you like to calculate? ");
         System.out.println(" - Press '1' for Pythagoras Theorem calculator ");
@@ -12,14 +12,14 @@ public class General_purpose_calc
         System.out.println(" - Press '3' for a basic calculator ");
         System.out.println(" - Press '4' to find the square root of a number");
         System.out.println(" - Press '5' for a profit calculator ");
-        ch1 = sc.nextInt();
-        if(ch1 == 1)
+        ch1 = sc.nextInt(); //Any integer entered at this point will be taken as the value for variable "ch1" and used to determine what the user wants to do
+        if(ch1 == 1) //This part is executed if user enters "1"
         {
         System.out.println(" What information is given to you ? ");
         System.out.println(" - Press 7 if base and height are given ");
         System.out.println(" - Press 8 if base and hypotenuse are given ");
         System.out.println(" - press 9 if height and hypotenuse are given ");
-        int b = 0,h = 0,hp = 0;
+        int b = 0, h = 0, hp = 0; //Declaring variables to be used in the following switch case
         int chp = 0;
         chp = sc.nextInt();
         switch(chp)
@@ -53,8 +53,9 @@ public class General_purpose_calc
             default :System.out.println(" --> Invalid ");
             }
         }
-        else if(ch1 == 2)
+        else if(ch1 == 2) //This part is executed if user enters "2"
         {
+            int s1 = 0, s2 = 0, s3 = 0;
             System.out.println(" > Enter value of the first side ");
             s1 = sc.nextInt();
             System.out.println(" > Enter value of the second side ");
@@ -86,7 +87,7 @@ public class General_purpose_calc
                 System.out.println(" --> Unkown triangle type");
             }
         }
-        else if(ch1==3)
+        else if(ch1==3) //This part is executed if user enters "3"
         {
             int vnum = 0;
             System.out.println(" > Enter the number of terms ");
@@ -204,15 +205,15 @@ public class General_purpose_calc
                 default : System.out.println(" --> 5 or more terms are not supported ");       
             }
         }
-        else if(ch1==4)
+        else if(ch1==4) //This part is executed if user enters "4"
         {
-            double srnum = 0;
+            double srnum = 0; //Using double instead of int as int in the case of Math.sqrt int gives inaccurate values
             System.out.println(" > Enter the value of the term ");
             srnum = sc.nextInt();
-            double srnumR = Math.sqrt(srnum);
+            double srnumR = Math.sqrt(srnum); //If you want to use int in place of double Use this 'int (Your int) = (int) Math.sqrt(Your int)<-- bracets madatory here
             System.out.println(" --> Your answer is = " + srnumR );
         }
-        else if(ch1==5)
+        else if(ch1==5) //This part is executed if user enters "5"
         {
             int cp = 0,sp = 0;
             System.out.println(" > Enter cost price ");
@@ -234,6 +235,6 @@ public class General_purpose_calc
                 System.out.println(" --> Loss percentage = " + sfs + " % ");
             }
         }
-        sc.close();
+        sc.close(); //Closing resource leak
     }
 }
