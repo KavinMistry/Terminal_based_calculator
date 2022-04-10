@@ -211,7 +211,7 @@ public class General_purpose_calc
             System.out.println(" > Enter the value of the term ");
             srnum = sc.nextInt();
             double srnumR = Math.sqrt(srnum); //If you want to use int in place of double Use this 'int (Your int) = (int) Math.sqrt(Your int)<-- bracets madatory here
-            System.out.println(" --> Your answer is = " + srnumR );
+            System.out.println(" --> Your answer is = " + srnumR ); //using int in math operation is not recommended 
         }
         else if(ch1==5) //This part is executed if user enters "5"
         {
