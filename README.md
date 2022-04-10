@@ -1,2 +1,1 @@
-# General_purpose_calc
-Multi purpose terminal based calculator.
+Multi purpose terminal based calculator useful example for people just starting out with java.
