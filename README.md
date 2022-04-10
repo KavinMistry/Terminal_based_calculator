@@ -1,3 +1,4 @@
 # Java Caculator. #
-_Multi purpose terminal based calculator_ useful example for people just starting out with java
-I have also added comments explaining the code making it even easier to understand
+_Multi purpose terminal based calculator_ useful example for people just starting out with java.
+
+I have also added comments explaining the code making it even easier to understand.
