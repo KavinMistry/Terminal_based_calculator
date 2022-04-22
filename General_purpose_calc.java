@@ -316,7 +316,7 @@ public class General_purpose_calc
         }
         catch(Exception A)
         {   
-            System.out.println(" ERROR --> " + A + " \n > You might have entered a character in place of a number \n > Or might have entered a un defined number option \n --> Report errors in github please ! ");
+            System.out.println(" ERROR --> " + A + " \n > You might have entered a character in place of a number \n > Or might have entered a un defined number option \n --> Report errors to github please ! \n GitHub username - Kavin Mistry ");
         }
     }
 }
