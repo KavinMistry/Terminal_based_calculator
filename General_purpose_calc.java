@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.io.*;
 public class General_purpose_calc
 {
     public static void main(String[] args)
@@ -14,6 +15,7 @@ public class General_purpose_calc
         System.out.println(" - Press '4' for a Profit calculator ");
         System.out.println(" - Press '5' for an Area calculator ");
         System.out.println(" - Press '6' for a Perimeter calculator ");
+        System.out.println(" - Press '7' for version information ");
         ch1 = sc.nextInt(); //Any integer entered at this point will be taken as the value for variable "ch1" and used to determine what the user wants to do
         if(ch1 == 1) //This part gets executed if user enters "1"
         {
@@ -309,11 +311,29 @@ public class General_purpose_calc
                         crP = sc.nextDouble();
                         double crPA = 2 * 3.14159 * crP;
                         System.out.println(" Your answer is --> " + crPA + " <-- " ); //value accurate upto 3 decimals only
-                default : System.out.println(" ERROR --> 4 or more terms are not supported ");
-                sc.close(); //Closing resource leak
+                break;
+                default :System.out.println(" ERROR --> 4 or more terms are not supported ");
             }
         }
-        System.out.println(" Built by > Kavin Mistry < ");
+        else if(ch1 == 7)
+        {
+        System.out.println(" ____________________  _                         ");
+        System.out.println("|    Running v1.7    | \\`*-.                     ");
+        System.out.println("|     Built By :     |  )  _`-.                  ");
+        System.out.println("|    Kavin Mistry    | :  : `. .                 ");
+        System.out.println("|____________________| : _   '  \\                ");
+        System.out.println("                       ; *` _.   `*-._           ");
+        System.out.println("                       `-.-'          `-.        ");
+        System.out.println("                         ;       `       `.      ");
+        System.out.println("                         :.       .        \\     ");
+        System.out.println("                         . \\  .   :   .-'   .    ");
+        System.out.println("                         '  `+.;  ;  '      :    ");
+        System.out.println("                         :  '  |    ;       ;-.  ");
+        System.out.println("                         ; '   : :`-:     _.`* ; ");
+        System.out.println("                      .*' /  .*' ; .*`- +'  `*'  ");
+        System.out.println("                      `*-*   `*-*  `*-*'         ");
+        sc.close(); //Closing resource leak
+        }
         }
         catch(Exception A)
         {   
