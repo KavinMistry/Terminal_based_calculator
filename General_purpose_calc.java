@@ -3,11 +3,13 @@ public class General_purpose_calc
 {
     public static void main(String[] args)
     {
+        Scanner sc = new Scanner(System.in);
+        for(char k = 1; k <= 2; k++)
+        {
         try
         {
         char ch1;
-        Scanner sc = new Scanner(System.in);
-        System.out.println(" > What would you like to calculate? < ");// You could also use \n at the end of an option instead of System.out.println again and again
+        System.out.println(" \n \n> What would you like to calculate? < ");// You could also use \n at the end of an option instead of System.out.println again and again
         System.out.println(" - Press '1' for a Pythagoras Theorem calculator ");
         System.out.println(" - Press '2' for a Normal calculator ");
         System.out.println(" - Press '3' for a Square Root calculator ");
@@ -341,7 +343,6 @@ public class General_purpose_calc
             int as1; // declare a int variable 
             as1 = as; // then asign the char value of the char variable to the int variable basically a type cast which returns the ASCII value instead of the char value
             System.out.println(" ASCII value of '" + as + "' is --> " + as1 );
-            sc.close();
         }
         else
         {
@@ -351,6 +352,23 @@ public class General_purpose_calc
         catch(Exception A)
         {
             System.out.println(" ERROR --> " + A + " \n> You might have entered a special character \n> Or might have entered a undefined number option \n--> Report errors in github please ! \n # Github username -- KavinMistry < ");
+        }
+        System.out.println("\n> Would you like to run the program again ? ");
+        System.out.println("- Press 'y' to run again and any other key to exit ");
+        char z = sc.next().charAt(0);
+        if(z == 'y')
+        {
+            k = 1;
+        }
+        else if(z == 's')
+        {
+            System.out.println("\nsiba spsppspspsps ");
+            k = 3;
+        }
+        else
+        {
+            k = 3;
+        }
         }
     }
 }
