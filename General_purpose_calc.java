@@ -16,6 +16,7 @@ public class General_purpose_calc
         System.out.println(" - Press '5' for an Area calculator ");
         System.out.println(" - Press '6' for a Perimeter calculator ");
         System.out.println(" - Press 'V' for version information ");
+        System.out.println(" - Press 'A' for a ASCII code finder ");
         ch1 = sc.next().charAt(0); // Any input entered at this point will be taken as the value for variable "ch1" and used to determine what the user wants to do
         if(ch1 == '1') // This part gets executed if user enters "1"
         {
@@ -176,7 +177,7 @@ public class General_purpose_calc
                 }
                 break;
                 case 5:double t1345, t2345, t3345, t4345, t5345;
-                System.out.println(" > Enter the value of first term (Decending order recommended) ");
+                System.out.println(" > Enter the value of first term ");
                 t1345 = sc.nextDouble();
                 System.out.println(" > Enter the value of second term ");
                 t2345 = sc.nextDouble(); 
@@ -332,7 +333,16 @@ public class General_purpose_calc
         System.out.println("                         ; '   : :`-:     _.`* ; ");
         System.out.println("                      .*' /  .*' ; .*`- +'  `*'  ");
         System.out.println("                      `*-*   `*-*  `*-*'         ");
-        sc.close(); // Closing resource leak
+        }
+        else if(ch1 == 'A' || ch1 == 'a')
+        {
+            char as; 
+            System.out.println(" > Enter any number/letter/symbol to find the ASCII value of it ");
+            as = sc.next().charAt(0); 
+            int as1; // declare a int variable 
+            as1 = as; // then asign the char value of the char variable to the int variable basically a type cast which returns the ASCII value instead of the char value
+            System.out.println(" ASCII value of '" + as + "' is --> " + as1 );
+            sc.close();
         }
         else
         {
@@ -340,7 +350,7 @@ public class General_purpose_calc
         }
         }
         catch(Exception A)
-        {   
+        {
             System.out.println(" ERROR --> " + A + " \n> You might have entered a special character \n> Or might have entered a undefined number option \n--> Report errors in github please ! \n # Github username -- KavinMistry < ");
         }
     }
