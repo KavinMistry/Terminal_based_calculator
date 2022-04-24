@@ -6,24 +6,24 @@ public class General_purpose_calc
     {
         try
         {
-        int ch1; //Declaring variables for selection system
+        char ch1;
         Scanner sc = new Scanner(System.in);
-        System.out.println(" > What would you like to calculate? < ");//You could also use \n at the end of an option instead of System.out.println again and again
+        System.out.println(" > What would you like to calculate? < ");// You could also use \n at the end of an option instead of System.out.println again and again
         System.out.println(" - Press '1' for a Pythagoras Theorem calculator ");
         System.out.println(" - Press '2' for a Normal calculator ");
         System.out.println(" - Press '3' for a Square Root calculator ");
         System.out.println(" - Press '4' for a Profit calculator ");
         System.out.println(" - Press '5' for an Area calculator ");
         System.out.println(" - Press '6' for a Perimeter calculator ");
-        System.out.println(" - Press '7' for version information ");
-        ch1 = sc.nextInt(); //Any integer entered at this point will be taken as the value for variable "ch1" and used to determine what the user wants to do
-        if(ch1 == 1) //This part gets executed if user enters "1"
+        System.out.println(" - Press 'V' for version information ");
+        ch1 = sc.next().charAt(0); // Any input entered at this point will be taken as the value for variable "ch1" and used to determine what the user wants to do
+        if(ch1 == '1') // This part gets executed if user enters "1"
         {
         System.out.println(" What information is given to you ? ");
         System.out.println(" - Press 1 if base and height are given ");
         System.out.println(" - Press 2 if base and hypotenuse are given ");
         System.out.println(" - press 3 if height and hypotenuse are given ");
-        double b, h, hp; //Declaring variables to be used in the following switch case
+        double b, h, hp; // Declaring variables to be used in the following switch case
         int chp;
         chp = sc.nextInt();
         switch(chp)
@@ -57,7 +57,7 @@ public class General_purpose_calc
             default :System.out.println(" ERROR --> Invalid ");
             }
         }
-        else if(ch1 == 2) //This part gets executed if user enters "2"
+        else if(ch1 == '2') // This part gets executed if user enters "2"
         {
             int vnum;
             System.out.println(" > Enter the number of terms ");
@@ -66,7 +66,7 @@ public class General_purpose_calc
             {
             case 1 :System.out.println(" ERROR --> Number of terms can not be 1 <-- ");
             break;
-            case 2 :double t1, t2, a1; //Always use double type for making any kind of calculator as int does not allow use of decimals, and gives a type miss match error when a decimal term is entered
+            case 2 :double t1, t2, a1; // Always use double type for making any kind of calculator as int does not allow use of decimals, and gives a type miss match error when a decimal term is entered
                     System.out.println(" > Enter the value of the first term ");
                     t1 = sc.nextDouble();
                     System.out.println(" > Enter the value of the second term ");
@@ -217,15 +217,15 @@ public class General_purpose_calc
                 default : System.out.println(" ERROR --> 6 or more terms are not supported ");       
             }
         }
-        else if(ch1 == 3) //This part gets executed if user enters "3"
+        else if(ch1 == '3') // This part gets executed if user enters "3"
         {
-            double srnum; //Using double instead of int as int in the case of Math.sqrt int gives inaccurate values
+            double srnum; // Using double instead of int as int in the case of Math.sqrt int gives inaccurate values
             System.out.println(" > Enter the value of the term ");
             srnum = sc.nextDouble();
-            double srnumR = Math.sqrt(srnum); //If you want to use int in place of double Use this 'int (Your int) = (int) Math.sqrt(Your int)<-- bracets madatory here
-            System.out.println(" Your answer is --> " + srnumR ); //using int in math operation is not recommended 
+            double srnumR = Math.sqrt(srnum); // If you want to use int in place of double Use this 'int (Your int) = (int) Math.sqrt(Your int)<-- bracets madatory here
+            System.out.println(" Your answer is --> " + srnumR ); // using int in math operation is not recommended 
         }
-        else if(ch1 == 4) //This part is executed if user enters "4"
+        else if(ch1 == '4') // This part is executed if user enters "4"
         {
             double cp, sp;
             System.out.println(" > Enter cost price ");
@@ -251,7 +251,7 @@ public class General_purpose_calc
                 System.out.println(" --> No loss or profit incurred <-- ");
             }
         }
-        else if(ch1 == 5) //This part gets executed when user enters "5"
+        else if(ch1 == '5') // This part gets executed when user enters "5"
         {
             int chA;
             System.out.println(" - Press '1' to calculate the Area of a square ");
@@ -274,16 +274,16 @@ public class General_purpose_calc
                         double rA = rb * rl;
                         System.out.println(" Your answer is --> " + rA + " <-- ");
                 break;
-                case 3 :double cr; //Once again using double for more accurate values
+                case 3 :double cr; // Once again using double for more accurate values
                         System.out.println(" Enter the value of radius ");
                         cr = sc.nextDouble();
-                        double crX = 3.14159 * (cr * cr);  //Defining PI uptill 5 decimals for even more accurate values
-                        System.out.println(" Your answer is --> " + crX ); //value accurate upto 3 decimals only
+                        double crX = 3.14159 * (cr * cr);  // Defining PI to 5 decimals for even more accurate values
+                        System.out.println(" Your answer is --> " + crX ); // value accurate upto 3 decimals only
                 break;
                 default : System.out.println(" ERROR --> Unkown choice ");
             }
         }
-        else if(ch1 == 6)
+        else if(ch1 == '6')
         {
             int chP;
             System.out.println(" - Press '1' to calculate the Perimeter of a square ");
@@ -310,12 +310,12 @@ public class General_purpose_calc
                         System.out.println(" > Enter value of radius ");
                         crP = sc.nextDouble();
                         double crPA = 2 * 3.14159 * crP;
-                        System.out.println(" Your answer is --> " + crPA + " <-- " ); //value accurate upto 3 decimals only
+                        System.out.println(" Your answer is --> " + crPA + " <-- " ); // value accurate upto 3 decimals only
                 break;
                 default :System.out.println(" ERROR --> 4 or more terms are not supported ");
             }
         }
-        else if(ch1 == 7)
+        else if(ch1 == 'v' || ch1 == 'V')
         {
         System.out.println(" ____________________  _                         ");
         System.out.println("|    Running v1.7    | \\`*-.                     ");
@@ -332,12 +332,16 @@ public class General_purpose_calc
         System.out.println("                         ; '   : :`-:     _.`* ; ");
         System.out.println("                      .*' /  .*' ; .*`- +'  `*'  ");
         System.out.println("                      `*-*   `*-*  `*-*'         ");
-        sc.close(); //Closing resource leak
+        sc.close(); // Closing resource leak
+        }
+        else
+        {
+            System.out.println(" ERROR \n> You might have entered a undefined letter option or a symbol instead try entering '1' or 'V' \n> If you continue to recive such errors please report them to my GitHub \n> Github username -- KavinMistry");
         }
         }
         catch(Exception A)
         {   
-            System.out.println(" ERROR --> " + A + " \n > You might have entered a character in place of a number \n > Or might have entered a un defined number option \n --> Report errors in github please ! \n # Github username > KavinMistry < ");
+            System.out.println(" ERROR --> " + A + " \n> You might have entered a special character \n> Or might have entered a undefined number option \n--> Report errors in github please ! \n # Github username -- KavinMistry < ");
         }
     }
 }
