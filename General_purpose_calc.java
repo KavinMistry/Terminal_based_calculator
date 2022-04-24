@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.io.*;
 public class General_purpose_calc
 {
     public static void main(String[] args)
@@ -41,7 +40,7 @@ public class General_purpose_calc
                     b = sc.nextDouble();
                     System.out.println(" > Enter the length of hypotenuse ");
                     hp = sc.nextDouble();
-                    h = hp * hp - b * b;
+                    h = hp * hp + b * b;
                     double rh;
                     rh = Math.sqrt(h);
                     System.out.println(" Height is --> " + rh + " <-- " );
@@ -50,7 +49,7 @@ public class General_purpose_calc
                     h = sc.nextDouble();
                     System.out.println(" > Enter the length of hypotenuse ");
                     hp = sc.nextDouble();
-                    b = hp * hp - h * h;
+                    b = hp * hp + h * h;
                     double rb;
                     rb = Math.sqrt(b);
                     System.out.println(" Base is --> " + rb + " <-- ");
