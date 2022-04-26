@@ -36,7 +36,7 @@ public class General_purpose_calc
                     h = sc.nextDouble();
                     hp = b * b + h * h;
                     double rhp = Math.sqrt(hp);
-                    System.out.println(" Hypotenuse is --> " + rhp + " <-- " );
+                    System.out.println(" Hypotenuse is --> " + rhp  );
                     break;
             case 2 :System.out.println(" > Enter the length of base ");
                     b = sc.nextDouble();
@@ -45,7 +45,7 @@ public class General_purpose_calc
                     h = hp * hp + b * b;
                     double rh;
                     rh = Math.sqrt(h);
-                    System.out.println(" Height is --> " + rh + " <-- " );
+                    System.out.println(" Height is --> " + rh  );
                     break;
             case 3 :System.out.println(" > Enter the length of height ");
                     h = sc.nextDouble();
@@ -54,7 +54,7 @@ public class General_purpose_calc
                     b = hp * hp + h * h;
                     double rb;
                     rb = Math.sqrt(b);
-                    System.out.println(" Base is --> " + rb + " <-- ");
+                    System.out.println(" Base is --> " + rb );
                     break;
             default :System.out.println(" ERROR --> Invalid ");
             }
@@ -83,22 +83,22 @@ public class General_purpose_calc
                     if(tas == 1)
                     {
                         a1 = t1 + t2;
-                        System.out.println(" Your answer is --> " + a1 + " <-- ");
+                        System.out.println(" Your answer is --> " + a1 );
                     }
                     else if(tas == 2)
                     {
                         a1 = t1 - t2;
-                        System.out.println(" Your answer is --> " + a1 + " <-- ");
+                        System.out.println(" Your answer is --> " + a1 );
                     }
                     else if(tas == 3)
                     {
                         a1 = t1 * t2;
-                        System.out.println(" Your answer is --> " + a1 + " <-- ");
+                        System.out.println(" Your answer is --> " + a1 );
                     }
                     else if(tas == 4)
                     {
                         a1 = t1/t2;
-                        System.out.println(" Your answer is --> " + a1 + " <-- ");
+                        System.out.println(" Your answer is --> " + a1 );
                     }
                 break;
                 case 3:double t13, t23, t33;
@@ -118,22 +118,22 @@ public class General_purpose_calc
                 if(tas3 == 1)
                 {
                     a1 = t13 + t23 + t33;
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 else if(tas3 == 2)
                 {
                     a1 = t13 - t23 - t33;
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 else if(tas3 == 3)
                 {
                     a1 = t13 * t23 * t33;
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 else if(tas3 == 4)
                 {
                     a1 = (t13/t23)/t33;
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 else
                 {
@@ -159,22 +159,22 @@ public class General_purpose_calc
                 if(tas34 == 1)
                 {
                     a1 = t134 + t234 + t334 + t434;
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 else if(tas34 == 2)
                 {
                     a1 = t134 - t234 - t334 - t434;
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 else if(tas34 == 3)
                 {
                     a1 = t134 * t234 * t334 * t434;
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 else if(tas34 == 4)
                 {
                     a1 = (t134/t234)/t334/(t434);
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 break;
                 case 5:double t1345, t2345, t3345, t4345, t5345;
@@ -198,22 +198,22 @@ public class General_purpose_calc
                 if(tas345 == 1)
                 {
                     a1 = t1345 + t2345 + t3345 + t4345 + t5345;
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 else if(tas345 == 2)
                 {
                     a1 = t1345 - t2345 - t3345 - t4345 - t5345;
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 else if(tas345 == 3)
                 {
                     a1 = t1345 * t2345 * t3345 * t4345 * t5345;
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 else if(tas345 == 4)
                 {
                     a1 = t1345 / t2345 / t3345 / t4345 / t5345;
-                    System.out.println(" Your answer is --> " + a1 + " <-- ");
+                    System.out.println(" Your answer is --> " + a1 );
                 }
                 break;
                 default : System.out.println(" ERROR --> 6 or more terms are not supported ");       
@@ -237,7 +237,7 @@ public class General_purpose_calc
             if(sp > cp)
             {
                 double pf = (sp - cp);
-                System.out.println(" Profit --> " + pf + " <-- ");
+                System.out.println(" Profit --> " + pf );
                 double pfp = (pf * 100)/cp;
                 System.out.println(" Profit percentage --> " + pfp + " %  <-- ");
             }
@@ -266,7 +266,7 @@ public class General_purpose_calc
                         System.out.println(" > Enter the value of side ");
                         ss = sc.nextDouble();
                         double ssA = ss * ss;
-                        System.out.println(" Your answer is --> " + ssA + " <-- ");
+                        System.out.println(" Your answer is --> " + ssA );
                 break;
                 case 2 :double rl, rb;
                         System.out.println(" > Enter the value of breadth (width) ");
@@ -274,7 +274,7 @@ public class General_purpose_calc
                         System.out.println(" > Enter the value of length ");
                         rl = sc.nextDouble();
                         double rA = rb * rl;
-                        System.out.println(" Your answer is --> " + rA + " <-- ");
+                        System.out.println(" Your answer is --> " + rA );
                 break;
                 case 3 :double cr; // Once again using double for more accurate values
                         System.out.println(" Enter the value of radius ");
@@ -298,7 +298,7 @@ public class General_purpose_calc
                         System.out.println(" > Enter value of side ");
                         sP = sc.nextDouble();
                         double sPA = (4 * sP);
-                        System.out.println(" Your answer is --> " + sPA + " <-- ");
+                        System.out.println(" Your answer is --> " + sPA );
                 break;
                 case 2 :double rPL, rPB;
                         System.out.println(" > Enter value of breadth (width) ");
@@ -306,13 +306,13 @@ public class General_purpose_calc
                         System.out.println(" > Enter value of length ");
                         rPL = sc.nextDouble();
                         double rPA = 2 * (rPL + rPB);
-                        System.out.println(" Your answer is --> " + rPA + " <-- ");
+                        System.out.println(" Your answer is --> " + rPA );
                 break;
                 case 3 :double crP;
                         System.out.println(" > Enter value of radius ");
                         crP = sc.nextDouble();
                         double crPA = 2 * 3.14159 * crP;
-                        System.out.println(" Your answer is --> " + crPA + " <-- " ); // value accurate upto 3 decimals only
+                        System.out.println(" Your answer is --> " + crPA  ); // value accurate upto 3 decimals only
                 break;
                 default :System.out.println(" ERROR --> 4 or more terms are not supported ");
             }
@@ -370,5 +370,6 @@ public class General_purpose_calc
             k = 3;
         }
         }
+        sc.close();
     }
 }
