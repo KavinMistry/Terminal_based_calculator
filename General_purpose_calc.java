@@ -351,7 +351,7 @@ public class General_purpose_calc
         }
         catch(Exception A)
         {
-            System.out.println(" ERROR --> " + A + " \n> You might have entered a special character \n> Or might have entered a undefined number option \n--> Report errors in github please ! \n # Github username -- KavinMistry < ");
+            System.out.println("ERROR --> " + A + " \n> You might have entered a special character \n> Or might have entered a undefined number option \n--> Report errors in github please ! \n # Github username -- KavinMistry < ");
         }
         System.out.println("\n> Would you like to run the program again ? ");
         System.out.println("- Press 'y' to run again and any other key to exit ");
