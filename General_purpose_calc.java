@@ -26,11 +26,11 @@ public class General_purpose_calc
         System.out.println(" - Press 2 if base and hypotenuse are given ");
         System.out.println(" - press 3 if height and hypotenuse are given ");
         double b, h, hp; // Declaring variables to be used in the following switch case
-        int chp;
-        chp = sc.nextInt();
+        char chp;
+        chp = sc.next().charAt(0);
         switch(chp)
         {
-            case 1 :System.out.println(" > Enter the length of base ");
+            case '1' :System.out.println(" > Enter the length of base ");
                     b = sc.nextDouble();
                     System.out.println(" > Enter the length of height ");
                     h = sc.nextDouble();
@@ -39,7 +39,7 @@ public class General_purpose_calc
                     double rhp = Math.sqrt(hp);
                     System.out.println(" Solved Hypotenuse is --> " + rhp  );
                     break;
-            case 2 :System.out.println(" > Enter the length of base ");
+            case '2' :System.out.println(" > Enter the length of base ");
                     b = sc.nextDouble();
                     System.out.println(" > Enter the length of hypotenuse ");
                     hp = sc.nextDouble();
@@ -49,7 +49,7 @@ public class General_purpose_calc
                     rh = Math.sqrt(h);
                     System.out.println(" Solved Height is --> " + rh  );
                     break;
-            case 3 :System.out.println(" > Enter the length of height ");
+            case '3' :System.out.println(" > Enter the length of height ");
                     h = sc.nextDouble();
                     System.out.println(" > Enter the length of hypotenuse ");
                     hp = sc.nextDouble();
@@ -64,14 +64,14 @@ public class General_purpose_calc
         }
         else if(ch1 == '2') // This part gets executed if user enters "2"
         {
-            int vnum;
+            char vnum;
             System.out.println(" > Enter the number of terms ");
-            vnum = sc.nextInt();
+            vnum = sc.next().charAt(0);
             switch(vnum)
             {
-            case 1 :System.out.println(" ERROR --> Number of terms can not be 1 <-- ");
+            case '1' :System.out.println(" ERROR --> Number of terms can not be 1 <-- ");
             break;
-            case 2 :double t1, t2, a1; // Always use double type for making any kind of calculator as int does not allow use of decimals, and gives a type miss match error when a decimal term is entered
+            case '2' :double t1, t2, a1; // Always use double type for making any kind of calculator as int does not allow use of decimals, and gives a type miss match error when a decimal term is entered
                     System.out.println(" > Enter the value of the first term ");
                     t1 = sc.nextDouble();
                     System.out.println(" > Enter the value of the second term ");
@@ -104,7 +104,7 @@ public class General_purpose_calc
                         System.out.println(" Your answer is --> " + a1 );
                     }
                 break;
-                case 3:double t13, t23, t33;
+            case '3': double t13, t23, t33;
                 System.out.println(" > Enter the value of the first term ");
                 t13 = sc.nextDouble(); 
                 System.out.println(" > Enter the value of the second term ");
@@ -143,7 +143,7 @@ public class General_purpose_calc
                     System.out.println(" ERROR --> Unkown choice <-- ");
                 }
                 break;
-                case 4:double t134, t234, t334, t434;
+            case '4':double t134, t234, t334, t434;
                 System.out.println(" > Enter the value of first term ");
                 t134 = sc.nextDouble();
                 System.out.println(" > Enter the value of second term ");
@@ -180,7 +180,7 @@ public class General_purpose_calc
                     System.out.println(" Your answer is --> " + a1 );
                 }
                 break;
-                case 5:double t1345, t2345, t3345, t4345, t5345;
+            case '5':double t1345, t2345, t3345, t4345, t5345;
                 System.out.println(" > Enter the value of first term ");
                 t1345 = sc.nextDouble();
                 System.out.println(" > Enter the value of second term ");
@@ -258,20 +258,20 @@ public class General_purpose_calc
         }
         else if(ch1 == '5') // This part gets executed when user enters "5"
         {
-            int chA;
+            char chA;
             System.out.println(" - Press '1' to calculate the Area of a square ");
             System.out.println(" - Press '2' to calculate the Area of a rectangle ");
             System.out.println(" - Press '3' to calculate the Area of a circle ");
-            chA = sc.nextInt();
+            chA = sc.next().charAt(0);
             switch(chA)
             {
-                case 1 :double ss;
+                case '1' :double ss;
                         System.out.println(" > Enter the value of side ");
                         ss = sc.nextDouble();
                         double ssA = ss * ss;
                         System.out.println(" Your answer is --> " + ssA );
                 break;
-                case 2 :double rl, rb;
+                case '2' :double rl, rb;
                         System.out.println(" > Enter the value of breadth (width) ");
                         rb = sc.nextDouble();
                         System.out.println(" > Enter the value of length ");
@@ -279,7 +279,7 @@ public class General_purpose_calc
                         double rA = rb * rl;
                         System.out.println(" Your answer is --> " + rA );
                 break;
-                case 3 :double cr; // Once again using double for more accurate values
+                case '3' :double cr; // Once again using double for more accurate values
                         System.out.println(" Enter the value of radius ");
                         cr = sc.nextDouble();
                         double crX = 3.14159 * (cr * cr);  // Defining PI to 5 decimals for even more accurate values
@@ -290,20 +290,20 @@ public class General_purpose_calc
         }
         else if(ch1 == '6')
         {
-            int chP;
+            char chP;
             System.out.println(" - Press '1' to calculate the Perimeter of a square ");
             System.out.println(" - Press '2' to calculate the Perimeter of a rectangle ");
             System.out.println(" - Press '3' to calculate the Perimeter of a circle ");
-            chP = sc.nextInt();
+            chP = sc.next().charAt(0);
             switch(chP)
             {
-                case 1 :double sP;
+                case '1' :double sP;
                         System.out.println(" > Enter value of side ");
                         sP = sc.nextDouble();
                         double sPA = (4 * sP);
                         System.out.println(" Your answer is --> " + sPA );
                 break;
-                case 2 :double rPL, rPB;
+                case '2' :double rPL, rPB;
                         System.out.println(" > Enter value of breadth (width) ");
                         rPB = sc.nextDouble();
                         System.out.println(" > Enter value of length ");
@@ -311,7 +311,7 @@ public class General_purpose_calc
                         double rPA = 2 * (rPL + rPB);
                         System.out.println(" Your answer is --> " + rPA );
                 break;
-                case 3 :double crP;
+                case '3' :double crP;
                         System.out.println(" > Enter value of radius ");
                         crP = sc.nextDouble();
                         double crPA = 2 * 3.14159 * crP;
