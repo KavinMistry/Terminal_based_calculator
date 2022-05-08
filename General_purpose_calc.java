@@ -10,18 +10,20 @@ public class General_purpose_calc
         {
         char ch1;
         System.out.println(" \n \n> What would you like to calculate? < ");// You could also use \n at the end of an option instead of System.out.println again and again
+        System.out.println(" \n< Calculators > ");
         System.out.println(" - Press '1' for a Pythagoras Theorem calculator ");
         System.out.println(" - Press '2' for a Normal calculator ");
         System.out.println(" - Press '3' for a Square Root calculator ");
         System.out.println(" - Press '4' for a interest calculator (For recurring account) ");
         System.out.println(" - Press '5' for an Area calculator ");
         System.out.println(" - Press '6' for a Perimeter calculator ");
+        System.out.println(" \n< Miscellaneous > ");
         System.out.println(" - Press 'V' for version information ");
         System.out.println(" - Press 'A' for a ASCII code finder ");
         ch1 = sc.next().charAt(0); // Any input entered at this point will be taken as the value for variable "ch1" and used to determine what the user wants to do
         if(ch1 == '1') // This part gets executed if user enters "1"
         {
-        System.out.println(" What information is given to you ? ");
+        System.out.println(" > What information are you provided with ? ");
         System.out.println(" - Press 1 if base and height are given ");
         System.out.println(" - Press 2 if base and hypotenuse are given ");
         System.out.println(" - press 3 if height and hypotenuse are given ");
@@ -76,7 +78,7 @@ public class General_purpose_calc
                     t1 = sc.nextDouble();
                     System.out.println(" > Enter the value of the second term ");
                     t2 = sc.nextDouble();
-                    System.out.println(" > What would you like to do with these terms ? < ");
+                    System.out.println(" > What would you like to do with these terms ? ");
                     int tas;
                     System.out.println(" - Press 1 to Add the terms ");
                     System.out.println(" - Press 2 to Subtract the terms ");
@@ -111,7 +113,7 @@ public class General_purpose_calc
                 t23 = sc.nextDouble(); 
                 System.out.println(" > Enter the value of the third term ");
                 t33 = sc.nextDouble();
-                System.out.println(" > What would you like to do with these terms ? < ");
+                System.out.println(" > What would you like to do with these terms ? ");
                 int tas3;
                 System.out.println(" - Press 1 to Add the terms ");
                 System.out.println(" - Press 2 to Subtract the terms ");
@@ -152,7 +154,7 @@ public class General_purpose_calc
                 t334 = sc.nextDouble(); 
                 System.out.println(" > Enter the value of the fourth term ");
                 t434 = sc.nextDouble();
-                System.out.println(" > What would you like to do with these terms ? < ");
+                System.out.println(" > What would you like to do with these terms ? ");
                 int tas34 = 0;
                 System.out.println(" - Press 1 to Add the terms ");
                 System.out.println(" - Press 2 to Subtract the terms ");
@@ -191,7 +193,7 @@ public class General_purpose_calc
                 t4345 = sc.nextDouble();
                 System.out.println(" > Enter the value of the fifth term ");
                 t5345 = sc.nextDouble();
-                System.out.println(" > What would you like to do with these terms ? < ");
+                System.out.println(" > What would you like to do with these terms ? ");
                 int tas345;
                 System.out.println(" - Press 1 to Add the terms ");
                 System.out.println(" - Press 2 to Subtract the terms ");
@@ -224,8 +226,8 @@ public class General_purpose_calc
         }
         else if(ch1 == '3') // This part gets executed if user enters "3"
         {
-            double srnum; // Using double instead of int as int in the case of Math.sqrt int gives inaccurate values
-            System.out.println(" > Enter the value of the term ");
+            double srnum; // Using double instead of int as in the case of Math.sqrt int gives inaccurate values
+            System.out.println(" > Enter the number ");
             srnum = sc.nextDouble();
             double srnumR = Math.sqrt(srnum); // If you want to use int in place of double Use this 'int (Your int) = (int) Math.sqrt(Your int)<-- bracets madatory here
             System.out.println(" Your answer is --> " + srnumR ); // using int in math operation is not recommended 
@@ -248,6 +250,7 @@ public class General_purpose_calc
         else if(ch1 == '5') // This part gets executed when user enters "5"
         {
             char chA;
+            System.out.println(" > Choose the shape of the figure ");
             System.out.println(" - Press '1' to calculate the Area of a square ");
             System.out.println(" - Press '2' to calculate the Area of a rectangle ");
             System.out.println(" - Press '3' to calculate the Area of a circle ");
@@ -280,6 +283,7 @@ public class General_purpose_calc
         else if(ch1 == '6')
         {
             char chP;
+            System.out.println(" > Choose the shape of the figure ");
             System.out.println(" - Press '1' to calculate the Perimeter of a square ");
             System.out.println(" - Press '2' to calculate the Perimeter of a rectangle ");
             System.out.println(" - Press '3' to calculate the Perimeter of a circle ");
@@ -312,9 +316,9 @@ public class General_purpose_calc
         else if(ch1 == 'v' || ch1 == 'V')
         {
         System.out.println(" ____________________  _                         ");
-        System.out.println("|    Running v1.7    | \\`*-.                     ");
+        System.out.println("|    Running v1.9    | \\`*-.                     ");
         System.out.println("|     Built By :     |  )  _`-.                  ");
-        System.out.println("|    Kavin Mistry    | :  : `. .                 ");
+        System.out.println("|    Kavin Mistry    |  / : `. .                 ");
         System.out.println("|____________________| : _   '  \\                ");
         System.out.println("                       ; *` _.   `*-._           ");
         System.out.println("                       `-.-'          `-.        ");
