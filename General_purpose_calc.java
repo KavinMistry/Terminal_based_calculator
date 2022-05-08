@@ -66,47 +66,52 @@ public class General_purpose_calc
         }
         else if(ch1 == '2') // This part gets executed if user enters "2"
         {
+            double a1;
             char vnum;
             System.out.println(" > Enter the number of terms ");
             vnum = sc.next().charAt(0);
-            switch(vnum)
+            if(vnum == '1')
             {
-            case '1' :System.out.println(" ERROR --> Number of terms can not be 1 <-- ");
-            break;
-            case '2' :double t1, t2, a1; // Always use double type for making any kind of calculator as int does not allow use of decimals, and gives a type miss match error when a decimal term is entered
-                    System.out.println(" > Enter the value of the first term ");
-                    t1 = sc.nextDouble();
-                    System.out.println(" > Enter the value of the second term ");
-                    t2 = sc.nextDouble();
-                    System.out.println(" > What would you like to do with these terms ? ");
-                    int tas;
-                    System.out.println(" - Press 1 to Add the terms ");
-                    System.out.println(" - Press 2 to Subtract the terms ");
-                    System.out.println(" - Press 3 to Multiply the terms ");
-                    System.out.println(" - Press 4 to Divide the terms ");
-                    tas = sc.nextInt();
-                    if(tas == 1)
-                    {
-                        a1 = t1 + t2;
-                        System.out.println(" Your answer is --> " + a1 );
-                    }
-                    else if(tas == 2)
-                    {
-                        a1 = t1 - t2;
-                        System.out.println(" Your answer is --> " + a1 );
-                    }
-                    else if(tas == 3)
-                    {
-                        a1 = t1 * t2;
-                        System.out.println(" Your answer is --> " + a1 );
-                    }
-                    else if(tas == 4)
-                    {
-                        a1 = t1/t2;
-                        System.out.println(" Your answer is --> " + a1 );
-                    }
-                break;
-            case '3': double t13, t23, t33;
+                System.out.println(" ERROR --> Number of terms can not be 1 <-- ");
+            }
+            else if(vnum == '2')
+            {
+                double t1, t2; // Always use double type for making any kind of calculator as int does not allow use of decimals, and gives a type miss match error when a decimal term is entered
+                System.out.println(" > Enter the value of the first term ");
+                t1 = sc.nextDouble();
+                System.out.println(" > Enter the value of the second term ");
+                t2 = sc.nextDouble();
+                System.out.println(" > What would you like to do with these terms ? ");
+                int tas;
+                System.out.println(" - Press 1 to Add the terms ");
+                System.out.println(" - Press 2 to Subtract the terms ");
+                System.out.println(" - Press 3 to Multiply the terms ");
+                System.out.println(" - Press 4 to Divide the terms ");
+                tas = sc.nextInt();
+                if(tas == 1)
+                {
+                    a1 = t1 + t2;
+                    System.out.println(" Your answer is --> " + a1 );
+                }
+                else if(tas == 2)
+                {
+                    a1 = t1 - t2;
+                    System.out.println(" Your answer is --> " + a1 );
+                }
+                else if(tas == 3)
+                {
+                    a1 = t1 * t2;
+                    System.out.println(" Your answer is --> " + a1 );
+                }
+                else if(tas == 4)
+                {
+                    a1 = t1/t2;
+                    System.out.println(" Your answer is --> " + a1 );
+                }
+            }
+            else if(vnum == '3')
+            {
+                double t13, t23, t33;
                 System.out.println(" > Enter the value of the first term ");
                 t13 = sc.nextDouble(); 
                 System.out.println(" > Enter the value of the second term ");
@@ -144,8 +149,10 @@ public class General_purpose_calc
                 {
                     System.out.println(" ERROR --> Unkown choice <-- ");
                 }
-                break;
-            case '4':double t134, t234, t334, t434;
+            }
+            else if(vnum == '4')
+            {
+                double t134, t234, t334, t434;
                 System.out.println(" > Enter the value of first term ");
                 t134 = sc.nextDouble();
                 System.out.println(" > Enter the value of second term ");
@@ -181,8 +188,10 @@ public class General_purpose_calc
                     a1 = (t134/t234)/t334/(t434);
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                break;
-            case '5':double t1345, t2345, t3345, t4345, t5345;
+            }
+            else if(vnum == '5')
+            {
+                double t1345, t2345, t3345, t4345, t5345;
                 System.out.println(" > Enter the value of first term ");
                 t1345 = sc.nextDouble();
                 System.out.println(" > Enter the value of second term ");
@@ -220,9 +229,11 @@ public class General_purpose_calc
                     a1 = t1345 / t2345 / t3345 / t4345 / t5345;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                break;
-                default : System.out.println(" ERROR --> 6 or more terms are not supported ");       
             }
+            else
+            {
+                System.out.println(" ERROR --> 6 or more terms are not supported ");
+            }    
         }
         else if(ch1 == '3') // This part gets executed if user enters "3"
         {
