@@ -17,9 +17,10 @@ public class General_purpose_calc
         System.out.println(" - Press '4' for a interest calculator (For recurring account) ");
         System.out.println(" - Press '5' for an Area calculator ");
         System.out.println(" - Press '6' for a Perimeter calculator ");
+        System.out.println(" - Press '7' for a Percentage calculator ");
         System.out.println(" \n< Miscellaneous > ");
-        System.out.println(" - Press 'V' for version information ");
         System.out.println(" - Press 'A' for a ASCII code finder ");
+        System.out.println(" - Press 'V' for version information ");
         ch1 = sc.next().charAt(0); // Any input entered at this point will be taken as the value for variable "ch1" and used to determine what the user wants to do
         if(ch1 == '1') // This part gets executed if user enters "1"
         {
@@ -324,15 +325,25 @@ public class General_purpose_calc
                 default :System.out.println(" ERROR --> Unknown choice ");
             }
         }
+        else if(ch1 == '7')
+        {
+            double p, pt, ans;
+            System.out.println(" > Enter the percentage you want to find (% value) ");
+            p = sc.nextDouble();
+            System.out.println(" > Enter the number of which you want to find " + p + "%");
+            pt = sc.nextDouble();
+            ans = (p/100) * pt;
+            System.out.println(" > " + p + "% of " + pt + " is --> " + ans);
+        }
         else if(ch1 == 'v' || ch1 == 'V')
         {
         System.out.println(" ____________________  _                         ");
-        System.out.println("|    Running v1.9    | \\`*-.                     ");
+        System.out.println("|    Running v1.9    | \\`*\\                    ");
         System.out.println("|     Built By :     |  )  _`-.                  ");
         System.out.println("|    Kavin Mistry    |  / : `. .                 ");
-        System.out.println("|____________________| : _   '  \\                ");
-        System.out.println("                       ; *` _.   `*-._           ");
-        System.out.println("                       `-.-'          `-.        ");
+        System.out.println("|      Github :      | : _   '  \\                ");
+        System.out.println("|    KavinMistry     | ; *` _.   `*-._           ");
+        System.out.println("|____________________| `-.-'          `-.        ");
         System.out.println("                         ;       `       `.      ");
         System.out.println("                         :.       .        \\     ");
         System.out.println("                         . \\  .   :   .-'   .    ");
