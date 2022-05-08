@@ -13,7 +13,7 @@ public class General_purpose_calc
         System.out.println(" - Press '1' for a Pythagoras Theorem calculator ");
         System.out.println(" - Press '2' for a Normal calculator ");
         System.out.println(" - Press '3' for a Square Root calculator ");
-        System.out.println(" - Press '4' for a Profit calculator ");
+        System.out.println(" - Press '4' for a interest calculator (For recurring account) ");
         System.out.println(" - Press '5' for an Area calculator ");
         System.out.println(" - Press '6' for a Perimeter calculator ");
         System.out.println(" - Press 'V' for version information ");
@@ -232,29 +232,18 @@ public class General_purpose_calc
         }
         else if(ch1 == '4') // This part is executed if user enters "4"
         {
-            double cp, sp;
-            System.out.println(" > Enter cost price ");
-            cp = sc.nextDouble();
-            System.out.println(" > Enter selling price ");
-            sp = sc.nextDouble();
-            if(sp > cp)
-            {
-                double pf = (sp - cp);
-                System.out.println(" Profit --> " + pf );
-                double pfp = (pf * 100)/cp;
-                System.out.println(" Profit percentage --> " + pfp + " %  <-- ");
-            }
-            else if(sp < cp)
-            {
-                double sf = (cp - sp);
-                System.out.println(" Loss --> " + sf);
-                double sfs  = (sf * 100)/cp;
-                System.out.println(" Loss percentage --> " + sfs + " %  <-- ");
-            }
-            else
-            {
-                System.out.println(" --> No loss or profit incurred <-- ");
-            }
+            double p, r, tp, I, mv;
+            System.out.println(" > Enter principle ");
+            p = sc.nextDouble();
+            System.out.println(" > Enter the rate of interest ");
+            r = sc.nextDouble();
+            System.out.println(" > Enter Time period in months ");
+            tp = sc.nextDouble();
+            I = p * tp * (tp+1) * r / (2 * 12 * 100);
+            mv = p * tp + I;
+            System.out.println(" Intrest is --> " + I);
+            System.out.println(" Maturity value is --> " + mv);
+
         }
         else if(ch1 == '5') // This part gets executed when user enters "5"
         {
