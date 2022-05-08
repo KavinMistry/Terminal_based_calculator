@@ -232,8 +232,8 @@ public class General_purpose_calc
             }
             else
             {
-                System.out.println(" ERROR --> 6 or more terms are not supported ");
-            }    
+                System.out.println(" ERROR --> \n> You might have entered a character instead of a number \n> Or you might have entered a number greater than 5 \n> Please note 6 or more terms are not supported yet !");
+            }
         }
         else if(ch1 == '3') // This part gets executed if user enters "3"
         {
@@ -321,7 +321,7 @@ public class General_purpose_calc
                         double crPA = 2 * 3.14159 * crP;
                         System.out.println(" Your answer is --> " + crPA  ); // value accurate upto 3 decimals only
                 break;
-                default :System.out.println(" ERROR --> 4 or more terms are not supported ");
+                default :System.out.println(" ERROR --> Unknown choice ");
             }
         }
         else if(ch1 == 'v' || ch1 == 'V')
