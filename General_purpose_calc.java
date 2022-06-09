@@ -17,7 +17,8 @@ public class General_purpose_calc
         System.out.println(" - Press '4' for a interest calculator (For recurring account) ");
         System.out.println(" - Press '5' for an Area calculator ");
         System.out.println(" - Press '6' for a Perimeter calculator ");
-        System.out.println(" - Press '7' for a Percentage calculator ");
+        System.out.println(" - Press '7' for a volume calculator ");
+        System.out.println(" - Press '8' for a Percentage calculator ");
         System.out.println(" \n< Miscellaneous > ");
         System.out.println(" - Press 'A' for a ASCII code finder ");
         System.out.println(" - Press 'V' for version information ");
@@ -327,6 +328,54 @@ public class General_purpose_calc
         }
         else if(ch1 == '7')
         {
+            char chv;
+            System.out.println(" > Choose the shape of the figure ");
+            System.out.println(" - Press '1' to calculate the Volume of a Cube ");
+            System.out.println(" - Press '2' to calculate the Volume of a Cubiod ");
+            System.out.println(" - Press '3' to calculate the Volume of a Sphere ");
+            System.out.println(" - Press '4' to calculate the Volume of a Cone ");
+            chv = sc.next().charAt(0);
+            if(chv == '1')
+            {
+                double cv;
+                System.out.println(" > Enter the lenght of the side ");
+                cv = sc.nextDouble();
+                double vac = cv * cv * cv;
+                System.out.println(" Your answer is --> " + vac );
+            }
+            else if(chv == '2')
+            {
+                double lc, lb, lh;
+                System.out.println(" > Enter the Length of the Cubiod ");
+                lc = sc.nextDouble();
+                System.out.println(" > Enter the Breadth(Width) of the Cubiod ");
+                lb = sc.nextDouble();
+                System.out.println(" > Enter the Height of the Cubiod ");
+                lh = sc.nextDouble();
+                double acc = lc * lb * lh;
+                System.out.println(" Your answer is --> " + acc );
+            }
+            else if(chv == '3')
+            {
+                double vao, ro;
+                System.out.println(" > Enter the value of Radius ");
+                ro = sc.nextDouble();
+                vao = 1.33333333333*3.1415*(ro*ro*ro);
+                System.out.println(" Your answer is --> " + vao );
+            }
+            else if(chv == '4')
+            {
+                double vac2, rc, hc;
+                System.out.println(" > Enter the height of the cone ");
+                hc = sc.nextDouble();
+                System.out.println(" > Enter the radius of the cone ");
+                rc = sc.nextDouble();
+                vac2 = 3.1415*(rc*rc)*(hc/3);
+                System.out.println(" Your answer is --> " + vac2 );
+            }
+        }
+        else if(ch1 == '8')
+        {
             double p, pt, ans;
             System.out.println(" > Enter the percentage you want to find (% value) ");
             p = sc.nextDouble();
@@ -355,10 +404,10 @@ public class General_purpose_calc
         }
         else if(ch1 == 'A' || ch1 == 'a')
         {
-            char as; 
+            char as;
             System.out.println(" > Enter any number/letter/symbol to find the ASCII value of it ");
-            as = sc.next().charAt(0); 
-            int as1; // declare a int variable 
+            as = sc.next().charAt(0);
+            int as1; // declare a int variable
             as1 = as; // then asign the char value of the char variable to the int variable basically a type cast which returns the ASCII value instead of the char value
             System.out.println(" ASCII value of '" + as + "' is --> " + as1 );
         }
