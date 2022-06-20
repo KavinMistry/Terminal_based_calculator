@@ -17,7 +17,7 @@ public class General_purpose_calc
         System.out.println(" - Press '4' for a interest calculator (For recurring account) ");
         System.out.println(" - Press '5' for an Area calculator ");
         System.out.println(" - Press '6' for a Perimeter calculator ");
-        System.out.println(" - Press '7' for a volume calculator ");
+        System.out.println(" - Press '7' for a Volume calculator ");
         System.out.println(" - Press '8' for a Percentage calculator ");
         System.out.println(" \n< Miscellaneous > ");
         System.out.println(" - Press 'A' for a ASCII code finder ");
@@ -387,7 +387,7 @@ public class General_purpose_calc
         else if(ch1 == 'v' || ch1 == 'V')
         {
         System.out.println(" ____________________  _                         ");
-        System.out.println("|    Running v1.9    | \\`*\\                    ");
+        System.out.println("|    Running v2.0    | \\`*\\                    ");
         System.out.println("|     Built By :     |  )  _`-.                  ");
         System.out.println("|    Kavin Mistry    |  / : `. .                 ");
         System.out.println("|      Github :      | : _   '  \\                ");
@@ -429,7 +429,7 @@ public class General_purpose_calc
         }
         else if(z == 's')
         {
-            System.out.println("\nsiba spsppspspsps ");
+            System.out.println("\nYou found a secret ! ");
             k = 3;
         }
         else
