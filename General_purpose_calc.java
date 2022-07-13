@@ -84,28 +84,28 @@ public class General_purpose_calc
                 System.out.println(" > Enter the value of the second term ");
                 t2 = sc.nextDouble();
                 System.out.println(" > What would you like to do with these terms ? ");
-                int tas;
-                System.out.println(" - Press 1 to Add the terms ");
-                System.out.println(" - Press 2 to Subtract the terms ");
-                System.out.println(" - Press 3 to Multiply the terms ");
-                System.out.println(" - Press 4 to Divide the terms ");
-                tas = sc.nextInt();
-                if(tas == 1)
+                char chn;
+                System.out.println(" - Press '1' to Add the terms ");
+                System.out.println(" - Press '2' to Subtract the terms ");
+                System.out.println(" - Press '3' to Multiply the terms ");
+                System.out.println(" - Press '4' to Divide the terms ");
+                chn = sc.next().charAt(0);
+                if(chn == '1')
                 {
                     a1 = t1 + t2;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas == 2)
+                else if(chn == '2')
                 {
                     a1 = t1 - t2;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas == 3)
+                else if(chn == '3')
                 {
                     a1 = t1 * t2;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas == 4)
+                else if(chn == '4')
                 {
                     a1 = t1/t2;
                     System.out.println(" Your answer is --> " + a1 );
@@ -121,28 +121,28 @@ public class General_purpose_calc
                 System.out.println(" > Enter the value of the third term ");
                 t33 = sc.nextDouble();
                 System.out.println(" > What would you like to do with these terms ? ");
-                int tas3;
-                System.out.println(" - Press 1 to Add the terms ");
-                System.out.println(" - Press 2 to Subtract the terms ");
-                System.out.println(" - Press 3 to Multiply the terms ");
-                System.out.println(" - Press 4 to Divide the terms ");
-                tas3 = sc.nextInt();
-                if(tas3 == 1)
+                char chn1;
+                System.out.println(" - Press '1' to Add the terms ");
+                System.out.println(" - Press '2' to Subtract the terms ");
+                System.out.println(" - Press '3' to Multiply the terms ");
+                System.out.println(" - Press '4' to Divide the terms ");
+                chn1 = sc.next().charAt(0);
+                if(chn1 == '1')
                 {
                     a1 = t13 + t23 + t33;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas3 == 2)
+                else if(chn1 == '2')
                 {
                     a1 = t13 - t23 - t33;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas3 == 3)
+                else if(chn1 == '3')
                 {
                     a1 = t13 * t23 * t33;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas3 == 4)
+                else if(chn1 == '4')
                 {
                     a1 = (t13/t23)/t33;
                     System.out.println(" Your answer is --> " + a1 );
@@ -164,28 +164,28 @@ public class General_purpose_calc
                 System.out.println(" > Enter the value of the fourth term ");
                 t434 = sc.nextDouble();
                 System.out.println(" > What would you like to do with these terms ? ");
-                int tas34 = 0;
-                System.out.println(" - Press 1 to Add the terms ");
-                System.out.println(" - Press 2 to Subtract the terms ");
-                System.out.println(" - Press 3 to Multiply the terms ");
-                System.out.println(" - Press 4 to Divide the terms ");
-                tas34 = sc.nextInt();
-                if(tas34 == 1)
+                char chn2 = 0;
+                System.out.println(" - Press '1' to Add the terms ");
+                System.out.println(" - Press '2' to Subtract the terms ");
+                System.out.println(" - Press '3' to Multiply the terms ");
+                System.out.println(" - Press '4' to Divide the terms ");
+                chn2 = sc.next().charAt(0);
+                if(chn2 == '1')
                 {
                     a1 = t134 + t234 + t334 + t434;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas34 == 2)
+                else if(chn2 == '2')
                 {
                     a1 = t134 - t234 - t334 - t434;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas34 == 3)
+                else if(chn2 == '3')
                 {
                     a1 = t134 * t234 * t334 * t434;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas34 == 4)
+                else if(chn2 == '4')
                 {
                     a1 = (t134/t234)/t334/(t434);
                     System.out.println(" Your answer is --> " + a1 );
@@ -205,28 +205,28 @@ public class General_purpose_calc
                 System.out.println(" > Enter the value of the fifth term ");
                 t5345 = sc.nextDouble();
                 System.out.println(" > What would you like to do with these terms ? ");
-                int tas345;
-                System.out.println(" - Press 1 to Add the terms ");
-                System.out.println(" - Press 2 to Subtract the terms ");
-                System.out.println(" - Press 3 to Multiply the terms ");
-                System.out.println(" - Press 4 to Divide the terms ");
-                tas345 = sc.nextInt();
-                if(tas345 == 1)
+                char chn3;
+                System.out.println(" - Press '1' to Add the terms ");
+                System.out.println(" - Press '2' to Subtract the terms ");
+                System.out.println(" - Press '3' to Multiply the terms ");
+                System.out.println(" - Press '4' to Divide the terms ");
+                chn3 = sc.next().charAt(0);
+                if(chn3 == '1')
                 {
                     a1 = t1345 + t2345 + t3345 + t4345 + t5345;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas345 == 2)
+                else if(chn3 == '2')
                 {
                     a1 = t1345 - t2345 - t3345 - t4345 - t5345;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas345 == 3)
+                else if(chn3 == '3')
                 {
                     a1 = t1345 * t2345 * t3345 * t4345 * t5345;
                     System.out.println(" Your answer is --> " + a1 );
                 }
-                else if(tas345 == 4)
+                else if(chn3 == '4')
                 {
                     a1 = t1345 / t2345 / t3345 / t4345 / t5345;
                     System.out.println(" Your answer is --> " + a1 );
@@ -360,7 +360,7 @@ public class General_purpose_calc
                 double vao, ro;
                 System.out.println(" > Enter the value of Radius ");
                 ro = sc.nextDouble();
-                vao = 1.33333333333*3.1415*(ro*ro*ro);
+                vao = 1.33333333333*3.14159*(ro*ro*ro);
                 System.out.println(" Your answer is --> " + vao );
             }
             else if(chv == '4')
@@ -370,7 +370,7 @@ public class General_purpose_calc
                 hc = sc.nextDouble();
                 System.out.println(" > Enter the radius of the cone ");
                 rc = sc.nextDouble();
-                vac2 = 3.1415*(rc*rc)*(hc/3);
+                vac2 = 3.14159*(rc*rc)*(hc/3);
                 System.out.println(" Your answer is --> " + vac2 );
             }
         }
