@@ -68,173 +68,227 @@ public class General_purpose_calc
         }
         else if(ch1 == '2') // This part gets executed if user enters "2"
         {
-            double a1;
+            double a1 = 0;
             char vnum;
-            System.out.println(" > Enter the number of terms ");
+            System.out.println(" > What would you like to do ? < ");
+            System.out.println(" - Press '1' for Addition  ");
+            System.out.println(" - Press '2' for Subtraction ");
+            System.out.println(" - Press '3' for Multiplication ");
+            System.out.println(" - Press '4' for Division ");
             vnum = sc.next().charAt(0);
-            if(vnum == '1')
-            {
-                System.out.println(" ERROR --> Number of terms can not be 1 <-- ");
-            }
-            else if(vnum == '2')
-            {
-                double t1, t2; // Always use double type for making any kind of calculator as int does not allow use of decimals, and gives a type miss match error when a decimal term is entered
-                System.out.println(" > Enter the value of the first term ");
-                t1 = sc.nextDouble();
-                System.out.println(" > Enter the value of the second term ");
-                t2 = sc.nextDouble();
-                System.out.println(" > What would you like to do with these terms ? ");
-                char chn;
-                System.out.println(" - Press '1' to Add the terms ");
-                System.out.println(" - Press '2' to Subtract the terms ");
-                System.out.println(" - Press '3' to Multiply the terms ");
-                System.out.println(" - Press '4' to Divide the terms ");
-                chn = sc.next().charAt(0);
-                if(chn == '1')
+            switch(vnum)
                 {
-                    a1 = t1 + t2;
-                    System.out.println(" Your answer is --> " + a1 );
+                case '1' :  char chn;
+                            System.out.println(" > Enter the number of terms (2 - 5) ");
+                            chn = sc.next().charAt(0);
+                            switch(chn)
+                            {
+                                case '1' :  System.out.println(" > Number of terms can not be 1 ");
+                                break;
+                                case '2' :  double t1, t2;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            a1 = t1 + t2;
+                                break;
+                                case '3' :  double t3;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            a1 = t1 + t2 + t3;
+                                break;
+                                case '4' :  double t4;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fourth term ");
+                                            t4 = sc.nextDouble();
+                                            a1 = t1 + t2 + t3 + t4;
+                                break;
+                                case '5' :  double t5;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fourth term ");
+                                            t4 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fifth term ");
+                                            t5 = sc.nextDouble();
+                                            a1 = t1 + t2 + t3 + t4 + t5;
+                                break;
+                                default : System.out.println(" ERROR --> \n> You might have entered a character instead of a number \n> Or you might have entered a number greater than 5 \n> Please note 6 or more terms are not supported yet !");
                 }
-                else if(chn == '2')
-                {
-                    a1 = t1 - t2;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else if(chn == '3')
-                {
-                    a1 = t1 * t2;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else if(chn == '4')
-                {
-                    a1 = t1/t2;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-            }
-            else if(vnum == '3')
-            {
-                double t13, t23, t33;
-                System.out.println(" > Enter the value of the first term ");
-                t13 = sc.nextDouble(); 
-                System.out.println(" > Enter the value of the second term ");
-                t23 = sc.nextDouble(); 
-                System.out.println(" > Enter the value of the third term ");
-                t33 = sc.nextDouble();
-                System.out.println(" > What would you like to do with these terms ? ");
-                char chn1;
-                System.out.println(" - Press '1' to Add the terms ");
-                System.out.println(" - Press '2' to Subtract the terms ");
-                System.out.println(" - Press '3' to Multiply the terms ");
-                System.out.println(" - Press '4' to Divide the terms ");
-                chn1 = sc.next().charAt(0);
-                if(chn1 == '1')
-                {
-                    a1 = t13 + t23 + t33;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else if(chn1 == '2')
-                {
-                    a1 = t13 - t23 - t33;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else if(chn1 == '3')
-                {
-                    a1 = t13 * t23 * t33;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else if(chn1 == '4')
-                {
-                    a1 = (t13/t23)/t33;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else
-                {
-                    System.out.println(" ERROR --> Unkown choice <-- ");
-                }
-            }
-            else if(vnum == '4')
-            {
-                double t134, t234, t334, t434;
-                System.out.println(" > Enter the value of first term ");
-                t134 = sc.nextDouble();
-                System.out.println(" > Enter the value of second term ");
-                t234 = sc.nextDouble(); 
-                System.out.println(" > Enter the value of the third term ");
-                t334 = sc.nextDouble(); 
-                System.out.println(" > Enter the value of the fourth term ");
-                t434 = sc.nextDouble();
-                System.out.println(" > What would you like to do with these terms ? ");
-                char chn2 = 0;
-                System.out.println(" - Press '1' to Add the terms ");
-                System.out.println(" - Press '2' to Subtract the terms ");
-                System.out.println(" - Press '3' to Multiply the terms ");
-                System.out.println(" - Press '4' to Divide the terms ");
-                chn2 = sc.next().charAt(0);
-                if(chn2 == '1')
-                {
-                    a1 = t134 + t234 + t334 + t434;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else if(chn2 == '2')
-                {
-                    a1 = t134 - t234 - t334 - t434;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else if(chn2 == '3')
-                {
-                    a1 = t134 * t234 * t334 * t434;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else if(chn2 == '4')
-                {
-                    a1 = (t134/t234)/t334/(t434);
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-            }
-            else if(vnum == '5')
-            {
-                double t1345, t2345, t3345, t4345, t5345;
-                System.out.println(" > Enter the value of first term ");
-                t1345 = sc.nextDouble();
-                System.out.println(" > Enter the value of second term ");
-                t2345 = sc.nextDouble(); 
-                System.out.println(" > Enter the value of the third term ");
-                t3345 = sc.nextDouble(); 
-                System.out.println(" > Enter the value of the fourth term ");
-                t4345 = sc.nextDouble();
-                System.out.println(" > Enter the value of the fifth term ");
-                t5345 = sc.nextDouble();
-                System.out.println(" > What would you like to do with these terms ? ");
-                char chn3;
-                System.out.println(" - Press '1' to Add the terms ");
-                System.out.println(" - Press '2' to Subtract the terms ");
-                System.out.println(" - Press '3' to Multiply the terms ");
-                System.out.println(" - Press '4' to Divide the terms ");
-                chn3 = sc.next().charAt(0);
-                if(chn3 == '1')
-                {
-                    a1 = t1345 + t2345 + t3345 + t4345 + t5345;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else if(chn3 == '2')
-                {
-                    a1 = t1345 - t2345 - t3345 - t4345 - t5345;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else if(chn3 == '3')
-                {
-                    a1 = t1345 * t2345 * t3345 * t4345 * t5345;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-                else if(chn3 == '4')
-                {
-                    a1 = t1345 / t2345 / t3345 / t4345 / t5345;
-                    System.out.println(" Your answer is --> " + a1 );
-                }
-            }
-            else
-            {
-                System.out.println(" ERROR --> \n> You might have entered a character instead of a number \n> Or you might have entered a number greater than 5 \n> Please note 6 or more terms are not supported yet !");
+                break;
+                case '2' :  System.out.println(" > Enter the number of terms (2 - 5) ");
+                            chn = sc.next().charAt(0);
+                            switch(chn)
+                            {
+                                case '1' :  System.out.println(" > Number of terms can not be 1 ");
+                                break;
+                                case '2' :  double t1, t2;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            a1 = t1 - t2;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                case '3' :  double t3;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            a1 = t1 - t2 - t3;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                case '4' :  double t4;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fourth term ");
+                                            t4 = sc.nextDouble();
+                                            a1 = t1 - t2 - t3 - t4;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                case '5' :  double t5;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fourth term ");
+                                            t4 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fifth term ");
+                                            t5 = sc.nextDouble();
+                                            a1 = t1 - t2 - t3 - t4 - t5;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                default : System.out.println(" ERROR --> \n> You might have entered a character instead of a number \n> Or you might have entered a number greater than 5 \n> Please note 6 or more terms are not supported yet !");
+                            }
+                break;
+                case '3' :  System.out.println(" > Enter the number of terms (2 - 5) ");
+                            chn = sc.next().charAt(0);
+                            switch(chn)
+                            {
+                                case '1' :  System.out.println(" > Number of terms can not be 1 ");
+                                break;
+                                case '2' :  double t1, t2;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            a1 = t1 * t2;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                case '3' :  double t3;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            a1 = t1 * t2 * t3;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                case '4' :  double t4;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fourth term ");
+                                            t4 = sc.nextDouble();
+                                            a1 = t1 * t2 * t3 * t4;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                case '5' :  double t5;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fourth term ");
+                                            t4 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fifth term ");
+                                            t5 = sc.nextDouble();
+                                            a1 = t1 * t2 * t3 * t4 * t5;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                default : System.out.println(" ERROR --> \n> You might have entered a character instead of a number \n> Or you might have entered a number greater than 5 \n> Please note 6 or more terms are not supported yet !");
+            
+                            }
+                break;
+                case '4' :  System.out.println(" > Enter the number of terms (2 - 5) ");
+                            chn = sc.next().charAt(0);
+                            switch(chn)
+                            {
+                                case '1' :  System.out.println(" > Number of terms can not be 1 ");
+                                break;
+                                case '2' :  double t1, t2;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            a1 = t1 / t2;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                case '3' :  double t3;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            a1 = (t1 / t2) / t3;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                case '4' :  double t4;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fourth term ");
+                                            t4 = sc.nextDouble();
+                                            a1 = ((t1 / t2) / t3) / t4;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                case '5' :  double t5;
+                                            System.out.println(" > Enter the value of the first term ");
+                                            t1 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the second term ");
+                                            t2 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the third term ");
+                                            t3 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fourth term ");
+                                            t4 = sc.nextDouble();
+                                            System.out.println(" > Enter the value of the fifth term ");
+                                            t5 = sc.nextDouble();
+                                            a1 = (((t1 / t2) / t3) / t4) / t5;
+                                            System.out.println(" Answer is --> " + a1);
+                                break;
+                                default : System.out.println(" ERROR --> \n> You might have entered a character instead of a number \n> Or you might have entered a number greater than 5 \n> Please note 6 or more terms are not supported yet !");
+                            }
+                break;                
+                default :   System.out.println(" > Invalid choice ");
             }
         }
         else if(ch1 == '3') // This part gets executed if user enters "3"
