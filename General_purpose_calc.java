@@ -10,6 +10,11 @@ public class General_purpose_calc
         {
         char ch1;
         System.out.println(" \n \n> What would you like to calculate? < ");// You could also use \n at the end of an option instead of System.out.println again and again
+        for( ; ; )
+        {
+            Thread.sleep(1000);
+            break;
+        }
         System.out.println(" \n< Calculators > ");
         System.out.println(" - Press '1' for a Pythagoras Theorem calculator ");
         System.out.println(" - Press '2' for a Normal calculator ");
@@ -19,6 +24,11 @@ public class General_purpose_calc
         System.out.println(" - Press '6' for a Perimeter calculator ");
         System.out.println(" - Press '7' for a Volume calculator ");
         System.out.println(" - Press '8' for a Percentage calculator ");
+        for( ; ; )
+        {
+            Thread.sleep(1000);
+            break;
+        }
         System.out.println(" \n< Miscellaneous > ");
         System.out.println(" - Press 'A' for a ASCII code finder ");
         System.out.println(" - Press 'V' for version information ");
@@ -71,6 +81,11 @@ public class General_purpose_calc
             double a1 = 0;
             char vnum;
             System.out.println(" > What would you like to do ? < ");
+            for( ; ; )
+            {
+                Thread.sleep(500);
+                break;
+            }
             System.out.println(" - Press '1' for Addition  ");
             System.out.println(" - Press '2' for Subtraction ");
             System.out.println(" - Press '3' for Multiplication ");
@@ -445,7 +460,7 @@ public class General_purpose_calc
         else if(ch1 == 'v' || ch1 == 'V')
         {
         System.out.println(" ____________________  _                         ");
-        System.out.println("|    Running v2.0    | \\`*\\                    ");
+        System.out.println("|    Running v2.1    | \\`*\\                    ");
         System.out.println("|     Built By :     |  )  _`-.                  ");
         System.out.println("|    Kavin Mistry    |  / : `. .                 ");
         System.out.println("|      Github :      | : _   '  \\                ");
