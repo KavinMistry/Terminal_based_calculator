@@ -4,7 +4,7 @@ public class General_purpose_calc
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);
-        for(char k = 1; k <= 2; k++)
+        for(int k = 1; k <= 2; k++)
         {
         try
         {
@@ -12,7 +12,7 @@ public class General_purpose_calc
         System.out.println(" \n \n> What would you like to calculate? < ");// You could also use \n at the end of an option instead of System.out.println again and again
         for( ; ; )
         {
-            Thread.sleep(1000);
+            Thread.sleep(900);
             break;
         }
         System.out.println(" \n< Calculators > ");
@@ -26,7 +26,7 @@ public class General_purpose_calc
         System.out.println(" - Press '8' for a Percentage calculator ");
         for( ; ; )
         {
-            Thread.sleep(1000);
+            Thread.sleep(500);
             break;
         }
         System.out.println(" \n< Miscellaneous > ");
@@ -81,11 +81,6 @@ public class General_purpose_calc
             double a1 = 0;
             char vnum;
             System.out.println(" > What would you like to do ? < ");
-            for( ; ; )
-            {
-                Thread.sleep(500);
-                break;
-            }
             System.out.println(" - Press '1' for Addition  ");
             System.out.println(" - Press '2' for Subtraction ");
             System.out.println(" - Press '3' for Multiplication ");
@@ -486,7 +481,7 @@ public class General_purpose_calc
         }
         else
         {
-            System.out.println(" ERROR \n> You might have entered a undefined letter option or a symbol instead try entering '1' or 'V' \n> If you continue to recive such errors please report them to my GitHub \n> Github username -- KavinMistry");
+            System.out.println(" ERROR \n> You might have entered a undefined option or a symbol, try entering '1' or 'V' \n> If you continue to recive such errors please report them to my GitHub \n> Github username -- KavinMistry");
         }
         }
         catch(Exception A)
